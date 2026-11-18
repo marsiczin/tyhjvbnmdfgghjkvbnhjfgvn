@@ -1,0 +1,32 @@
+{
+	"name": "kyouki",
+	"version": "1.0.0",
+	"description": "Kyouki - Teeworlds Flood Tool",
+	"license": "MIT",
+	"main": "cli.js",
+	"bin": {
+		"kyouki": "./cli.js"
+	},
+	"scripts": {
+		"start": "node cli.js",
+		"build": "pkg . --targets node18-win-x64,node18-linux-x64 --output dist/kyouki"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+github.com/swarfeya/teeworlds-library-ts.git"
+	},
+	"keywords": [
+		"teeworlds",
+		"flood",
+		"cli",
+		"kyouki"
+	],
+	"devDependencies": {
+		"@types/node": "^22.13.5",
+		"pkg": "^5.8.1"
+	},
+	"dependencies": {
+		"socks": "^2.8.9",
+		"teeworlds": "^2.5.5"
+	}
+}
